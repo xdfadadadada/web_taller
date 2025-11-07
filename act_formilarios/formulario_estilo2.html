@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registro </title>
+
+    </head>
+
+    <body>
+
+        <h1> Registro Maraton 2025 </h1>
+
+        <form method="get">
+
+            <fieldset>
+
+                <legend> Datos del corredor </legend><br>
+
+                <label for="nom"> Nombre completo (obligatorio) </label><br>
+                <input type="text" id="nom" name="nombre" required><br><br>
+                <label for="contra"> contraseña de acceso (max. 12 caracteres)</label><br>
+                <input type="text" id="contra" name="contraseña" maxlength="12" required><br><br>
+                <label for="correo"> correo electronico </label><br>
+                <input type="email" id="correo" name="email"><br><br>
+                <label for="fechaN"> Fecha de nacimiento </label><br>
+                <input type="date" id="fechaN" name="Bday"><br><br>
+                <label for="fotoP"> Foto del corredor </label><br>
+                <input type="file" id="fotoP" name="profileP"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend> Informacion deportiva </legend><br>   
+
+                <label> Distancia a correr </label><br>
+                <label for="5k"> 5K </label>
+                <input type="radio" id="5k" name="distancia" value="5kilometros" checked><br>
+                <label for="10k"> 10K </label>
+                <input type="radio" id="10k" name="distancia" value="10kilometro"><br>
+                <label for="21k"> 21K (media maraton) </label>
+                <input type="radio" id="21k" name="distancia" value="21kilometros"><br><br>
+                <label> Preferencias: </label><br>
+                <label for="kit"> Kit de corredor </label>
+                <input type="checkbox" id="kit" name="preferencias" value="kitCorredor" checked><br>
+                <label for="medalla"> Medalla finisher </label>
+                <input type="checkbox" id="medalla" name="preferencias" value="medallaFin"><br>
+                <label for="remera"> Remera oficial (agotada) </label>
+                <input type="checkbox" id="remera" name="preferencias" value="remeraOficial" disabled><br>
+                <label for="pais"> Pais </label>
+                <select id="pais" name="paisR">
+
+                    <option value="argentina"> Argentina </option>
+                    <option value="rusia"> Rusia </option>
+                    <option value="estadosU"> EE.UU </option>
+                
+                </select><br><br>
+
+                <label for="pregunta"> ¿Que esperas aprender en taller? </label><br>
+                <textarea id="pregunta" name="taller" cols="30" rows="10"> Escribe aqui... </textarea>
+
+            </fieldset>
+
+        </form>
+
+    </body>
+
+</html>

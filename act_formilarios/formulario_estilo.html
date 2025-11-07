@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Actividad formularios </title>
+
+    </head>
+
+    <body>
+
+        <h1> Inscripcion taller de fotografia </h1>
+
+        <form method="get">
+
+            <fieldset>
+
+                <legend> Datos del participante </legend><br>
+
+                <label for="nom"> Nombre completo (obligatorio) </label><br>
+                <input type="text" id="nom" name="nombre" required><br><br>
+                <label for="contra"> contraseña de acceso (max. 15 caracteres)</label><br>
+                <input type="text" id="contra" name="contraseña" maxlength="15" required><br><br>
+                <label for="correo"> correo electronico </label><br>
+                <input type="email" id="correo" name="email"><br><br>
+                <label for="fechaN"> Fecha de nacimiento </label><br>
+                <input type="date" id="fechaN" name="Bday"><br><br>
+                <label for="fotoP"> Foto de perfil </label><br>
+                <input type="file" id="fotoP" name="profileP"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend> Preferencias fotograficas </legend><br>   
+
+                <label> Tipo de camara </label><br>
+                <label for="reflex"> reflex </label>
+                <input type="radio" id="reflex" name="tipoCamara" value="ref" checked><br>
+                <label for="mirL"> Mirrorless </label>
+                <input type="radio" id="mirL" name="tipoCamara" value="mirrorLess"><br>
+                <label for="mov"> Movil </label>
+                <input type="radio" id="mov" name="tipoCamara" value="movil"><br><br>
+                <label > Tematica preferida </label><br>
+                <label for="ps"> paisajes </label>
+                <input type="checkbox" id="ps" name="tipoCamara" value="paisajes" checked><br>
+                <label for="ret"> paisajes </label>
+                <input type="checkbox" id="ret" name="tipoCamara" value="retratos"><br>
+                <label for="mac"> Macro (no disponible) </label>
+                <input type="checkbox" id="mac" name="tipoCamara" value="macro" disabled><br>
+                <label for="paisR"> Pais de residencia </label>
+                <select id="paisR" name="paisResidencia">
+
+                    <option value="argentina"> Argentina </option>
+                    <option value="rusia"> Rusia </option>
+                    <option value="estadosU"> EE.UU </option>
+                
+                </select><br><br>
+
+                <label for="pregunta"> ¿Que esperas aprender en taller? </label><br>
+                <textarea id="pregunta" name="taller" cols="30" rows="10"> Escribe aqui... </textarea>
+
+            </fieldset>
+
+        </form>
+
+    </body>
+
+</html>
